@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #040404 40%, #000000 30%, #130F40);
+    background: #000000;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
     -ms-overflow-style: none;
@@ -26,6 +26,11 @@ body::-webkit-scrollbar {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
+    text-shadow: 0px 0px 40px #f700ff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 /* Thanks to https://codepen.io/raf187/pen/BvgGRQ */
@@ -71,11 +76,16 @@ body::-webkit-scrollbar {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
+    text-shadow: 0px 0px 40px #f700ff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .textbox {
     font-size: 28;
-    color: rgb(226, 226, 226);
+    color: whitesmoke;
 }
 
 .skillsList {
@@ -125,15 +135,16 @@ body::-webkit-scrollbar {
 }
 
 .bttn:hover {
-    animation: bttnhover;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes bttnhover {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, -10px); }
-    100%   { transform: translate(0, -0px); }   
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: black;
+    border-radius: 0.4vh;
+    background: #f700ff;
+    box-shadow: 0px 0px 60px #f700ff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .navbar {
@@ -141,3 +152,5 @@ body::-webkit-scrollbar {
     position: sticky;
     top: 0;
 }
+
+textarea, input, button, select { font-family: inherit; font-size: inherit; }
