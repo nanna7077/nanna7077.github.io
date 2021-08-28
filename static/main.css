@@ -1,0 +1,106 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    body {
+        background: #000000;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+    }
+    
+    #title {
+        position: absolute;
+        opacity: 1;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #name {
+        position: absolute;
+        opacity: 0;
+        text-align: center;
+        width: 100%
+    }
+    
+    #education {
+        position: absolute;
+        opacity: 0;
+        text-align: center;
+        width: 100%
+    }
+    
+    #skills {
+        position: absolute;
+        opacity: 0;
+        text-align: center;
+        width: 100%
+    }
+    
+    #projects {
+        position: absolute;
+        opacity: 0;
+        text-align: center;
+        width: 100%
+    }
+    
+    .bigText {
+        margin-top: 5vw;
+        font-size: 200;
+        display: inline-block;
+    }
+    
+    .fancyText {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(47deg, rgb(36, 35, 51) 0%, rgba(92, 7, 106, 1) 19%, rgba(111, 9, 121, 1) 29%, rgba(255, 0, 187, 1) 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: glow 2.5s infinite alternate;
+        font-weight: bold;
+    }
+    
+    .subText {
+        margin-top: 15vw;
+        font-size: 30;
+    }
+    
+    .skillContainer {
+        margin-top: 2vw;
+    }
+    
+    .skillsList {
+        background: linear-gradient(30deg, rgba(249, 22, 255, 1) 2%, rgba(175, 60, 225, 1) 38%, rgba(91, 71, 226, 1) 77%, rgba(0, 109, 241, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+        font-size: 32;
+        display: inline-block;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        animation-name: skillsList;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes skillsList {
+        0% {
+            transform: translate(0, 0px);
+        }
+        50% {
+            transform: translate(0, 25px);
+        }
+        100% {
+            transform: translate(0, -0px);
+        }
+    }
+    
+    #links {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
