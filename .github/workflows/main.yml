@@ -30,6 +30,5 @@ jobs:
           plugin_skyline: yes
           plugin_skyline_year: 2022
           plugin_skyline_quality: 1
-          plugin_skyline_compatibility: yes
           plugin_stargazers: yes
           plugin_stargazers_charts_type: chartist
