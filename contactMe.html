@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Nannan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="static/styles/main.css">
+    <link rel="icon" type="image/png" href="static/img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <img src="static/img/bg.jpg" id="bg">
+    <div id="nav"></div>
+    <section class="hero-body" style="margin-top: -20px;">
+        <div class="box">
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" id="name" type="text">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" id="email" type="email">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <input class="input" id="subject" type="text">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" id="message"></textarea>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button onclick="submit()" class="button is-success">Submit</button>
+                </div>
+                <div class="control">
+                    <button onclick="reset()" class="button is-link is-light">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pageFooter"></footer>
+</body>
+
+<script src="static/js/contactme.js"></script>
+<script src="static/js/common.js"></script>
+
+</html>
