@@ -15,5 +15,6 @@ document.getElementById("nav").innerHTML = `
     <span aria-hidden="true"><a class="navbar-item ${window.location.pathname === "/" ? "coloredfont" : ""}" href="/">Home</a></span>
     <span aria-hidden="true"><a class="navbar-item ${window.location.pathname === "/projects.html" ? "coloredfont" : ""}" href="/projects.html">Projects</a></span>
     <span aria-hidden="true"><a class="navbar-item ${window.location.pathname === "/contactMe.html" ? "coloredfont" : ""}" href="/contactMe.html">Contact Me</a></span>
+    <span aria-hidden="true"><a class="navbar-item ${window.location.pathname === "/resume.html" ? "coloredfont" : ""}" href="/resume.html">Resume</a></span>
 </nav>
 `;
