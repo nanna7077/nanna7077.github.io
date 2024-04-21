@@ -3,6 +3,7 @@
 import { FaDownload } from "react-icons/fa";
 
 export default function Resume() {
+
     return (
         <div className="p-4 h-full">
             <div className="flex justify-between w-full">

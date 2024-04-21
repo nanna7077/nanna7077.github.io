@@ -9,7 +9,6 @@ import Resume from "./Resume";
 import HireMeFooter from "./components/HireMeFooter";
 
 function App() {
-
     return (
         <HashRouter>
             <video autoPlay muted loop src="background.webm" className="fixed top-0 left-0 w-full h-full object-cover z-0" />

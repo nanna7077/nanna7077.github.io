@@ -100,7 +100,6 @@ export default function Contact() {
 
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.href.split("/contact")[1]);
-        console.log(urlParams);
         const url_subject = urlParams.get('subject');
         const url_message = urlParams.get('message');
         const url_email = urlParams.get('email');

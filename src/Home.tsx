@@ -13,7 +13,7 @@ export default function Home() {
     const [role, setRole] = useState('Fullstack Developer');
     const roles = ["Fullstack Developer", "Software Engineer", "Linux Enthusiast", "Innovationalist", "Tech Enthusiast", "ฅ^•ﻌ•^ฅ"];
     var currentRoleIndex = 0;
-    
+
     function changeGreetingandRole() {
         if (currentGreetingIndex >= greetings.length) currentGreetingIndex = 0;
         setGreeting(greetings[currentGreetingIndex++]);
