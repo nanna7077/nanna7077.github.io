@@ -6,18 +6,19 @@ export default function Nav() {
             <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/"}>
                 Home
             </button>
-            <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/works"}>
+            <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/#/works"}>
                 My Works
             </button>
-            <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/contact"}>
+            <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/#/contact"}>
                 Send me a message
             </button>
-            <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/resume"}>
+            <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/#/resume"}>
                 Resume
             </button>
-            {/* <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/blogs"}>
+            {/* <button className="hover:text-[#f694fb] py-2 px-4 font-semibold hover:font-bold" onClick={() => window.location.href = "/#/blogs"}>
                 Blogs
             </button> */}
         </div>
+
     </nav>)
 }
