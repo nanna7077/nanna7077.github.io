@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./Home";
 import "./App.css";
 import Nav from "./components/Nav";
@@ -11,7 +11,7 @@ import HireMeFooter from "./components/HireMeFooter";
 function App() {
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <video autoPlay muted loop src="background.webm" className="fixed top-0 left-0 w-full h-full object-cover z-0" />
             <div className="fixed top-0 left-0 w-full h-full text-white z-10 overflow-x-scroll">
                 <Nav />
@@ -24,7 +24,7 @@ function App() {
                 </Routes>
             </div>
             <HireMeFooter />
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
