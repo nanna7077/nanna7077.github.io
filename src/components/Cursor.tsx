@@ -12,8 +12,13 @@ export default function CustomCursor() {
 
         document.addEventListener("mousemove", handleMouseMove);
 
+        document.addEventListener("touchmove", handleMouseMove);
+        document.addEventListener("touchstart", handleMouseMove);
+
         return () => {
             document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("touchmove", handleMouseMove);
+            document.removeEventListener("touchstart", handleMouseMove);
         };
     }, []);
 
