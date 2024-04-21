@@ -6,7 +6,7 @@ export default function Works() {
     return (
         <div className="p-4">
             <h1 className="text-3xl font-bold">My Works</h1>
-            <div className="mt-8 flex gap-8 p-4 flex-wrap justify-around">
+            <div className="mt-8 flex gap-8 p-4 flex-wrap justify-around pb-12">
                 <div className="p-4 bg-[rgba(246,148,251,.2)] backdrop-blur-md rounded-xl w-1/4 self-stretch flex gap-2 flex-col min-h-[200px] hover:bg-[rgba(246,148,251,.4)] cursor-pointer">
                     <div className="font-bold text-lg">Worksy</div>
                     Work finding platform for everyday workers. Built for Google Solutions Challenge 2024.

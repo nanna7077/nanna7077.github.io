@@ -29,7 +29,7 @@ export default function Home() {
     
     return (
         <div className="p-4">
-            <div className="mt-16 text-center flex justify-center font-bold text-nowrap flex-wrap text-[2rem] lg:text-[8rem]">
+            <div className="mt-16 text-center flex justify-center font-bold text-nowrap flex-wrap text-[2rem] lg:text-[4rem]">
                 <TextTransition children={greeting + ","} springConfig={presets.gentle} className="text-[#f694fb] text-nowrap" />&nbsp;I am Nannan
             </div>
             <div className="mt-8 text-2xl font-bold text-nowrap flex justify-center"><TextTransition children={role} springConfig={presets.molasses} /></div>
