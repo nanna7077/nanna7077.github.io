@@ -8,26 +8,23 @@ export default function Contact() {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
-    function reset() {
-        setName("");
-        setEmail("");
-        setSubject("");
-        setMessage("");
-    }
-
     function handleSubmit(e) {
         if (e) e.preventDefault();
         var newx = new XMLHttpRequest();
-        newx.open("GET", "https://api.country.is/");
+        newx.open("GET", "https://ipapi.co/json/");
         newx.send();
 
         newx.onload = function () {
             var ip = "Unavailable";
             var country = "Unavailable";
+            var city = "Unavailable";
+            var utc_offset = "Unavailable";
             
             if (this.readyState == 4 && this.status == 200) {
                 ip = JSON.parse(this.responseText).ip;
-                country = JSON.parse(this.responseText).country;
+                country = JSON.parse(this.responseText).country_name;
+                city = JSON.parse(this.responseText).city;
+                utc_offset = JSON.parse(this.responseText).utc_offset;
             }
 
             fetch("https://discord.com/api/webhooks/1188136978122813561/4mcppoINnVcRw2axYAjskbTic4m4Fk7gLyYWxWRwU8iS7PEpBf_kjSAm8rRQ1zq6VR-S", {
@@ -71,6 +68,16 @@ export default function Contact() {
                                 "inline": true
                                 },
                                 {
+                                "name": city,
+                                "value": "City",
+                                "inline": true
+                                },
+                                {
+                                "name": utc_offset,
+                                "value": "UTC Offset",
+                                "inline": true
+                                },
+                                {
                                 "name": window.navigator.userAgent,
                                 "value": "User Agent"
                                 }
@@ -83,7 +90,7 @@ export default function Contact() {
                 .then(data => {
                     if (data.status === 204) {
                         alert('Thank you for your message!');
-                        reset();
+                        window.location.reload();
                     } else {
                         alert('Something went wrong. Please try again later.');
                     }
