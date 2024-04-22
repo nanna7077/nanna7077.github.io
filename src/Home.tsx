@@ -15,8 +15,8 @@ export default function Home() {
     var currentRoleIndex = 0;
 
     function changeGreetingandRole() {
-        if (currentGreetingIndex >= greetings.length) currentGreetingIndex = 0;
-        setGreeting(greetings[currentGreetingIndex++]);
+        // if (currentGreetingIndex >= greetings.length) currentGreetingIndex = 0;
+        // setGreeting(greetings[currentGreetingIndex++]);
         if (currentRoleIndex >= roles.length) currentRoleIndex = 0;
         setRole(roles[currentRoleIndex++]);
         clearTimeout(changeGreetingTimeout);
@@ -30,7 +30,8 @@ export default function Home() {
     return (
         <div className="p-4">
             <div className="mt-16 text-center flex justify-center font-bold text-nowrap flex-wrap text-[2rem] lg:text-[4rem]">
-                <TextTransition children={greeting + ","} springConfig={presets.gentle} className="text-[#f694fb] text-nowrap" />&nbsp;I am Nannan
+                {/* <TextTransition children={greeting + ","} springConfig={presets.gentle} className="text-[#f694fb] text-nowrap" />&nbsp;I am Nannan */}
+                Hello! I am Nannan
             </div>
             <div className="mt-8 text-2xl font-bold text-nowrap flex justify-center"><TextTransition children={role} springConfig={presets.molasses} /></div>
             <div className="mt-16 flex justify-center gap-12 flex-col lg:flex-row items-center">
