@@ -8,6 +8,13 @@ export default function Works() {
             <h1 className="text-3xl font-bold">My Works</h1>
             <div className="mt-8 p-4 grid grid-cols-1 gap-8 lg:grid-cols-3 pb-12">
                 <div className="p-4 bg-[rgba(246,148,251,.2)] flex flex-col justify-between backdrop-blur-md rounded-xl self-stretch min-h-[200px] hover:bg-[rgba(246,148,251,.4)] cursor-pointer">
+                    <div className="font-bold text-lg">Uzume</div>
+                    A simple video streamer with transcoding support for linux systems. 
+                    <div className="mt-4 flex gap-2 h-10">
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://github.com/nanna7077/uzume" target="_blank"><FaGithubSquare className="w-6 h-6" /> View on Github</a>
+                    </div>
+                </div>
+                <div className="p-4 bg-[rgba(246,148,251,.2)] flex flex-col justify-between backdrop-blur-md rounded-xl self-stretch min-h-[200px] hover:bg-[rgba(246,148,251,.4)] cursor-pointer">
                     <div className="font-bold text-lg">Worksy</div>
                     Work finding platform for everyday workers. Built for Google Solutions Challenge 2024.
                     <div className="mt-4 flex gap-2 h-10">
