@@ -32,7 +32,7 @@ export default function Works() {
                     <div className="font-bold text-lg">Chocola</div>
                     An anime focused Discord bot! Everything anime and manga in one place and at the comfortable reach through Discord with around 192523 users and in 328 servers.
                     <div className="mt-4 flex gap-2 h-10">
-                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://chocolabot.github.io" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try Chocola</a>
+                        <a className="flex items-center w-full gap-2 bg-[#f694fb] hover:bg-[#f694fb]/80 p-2 rounded-lg text-black" href="https://chocola.nannan.in" target="_blank"><FaInternetExplorer className="w-6 h-6" /> Try Chocola</a>
                     </div>
                 </div>
                 <div className="p-4 bg-[rgba(246,148,251,.2)] flex flex-col justify-between backdrop-blur-md rounded-xl self-stretch min-h-[200px] hover:bg-[rgba(246,148,251,.4)] cursor-pointer">
