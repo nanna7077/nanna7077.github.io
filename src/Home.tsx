@@ -11,7 +11,7 @@ export default function Home() {
     var currentGreetingIndex = 0;
 
     const [role, setRole] = useState('Fullstack Developer');
-    const roles = ["Fullstack Developer", "Software Engineer", "Linux Enthusiast", "Innovationalist", "Tech Enthusiast", "ฅ^•ﻌ•^ฅ"];
+    const roles = ["Fullstack Developer", "Linux Enthusiast", "Tech Enthusiast", "ฅ^•ﻌ•^ฅ"];
     var currentRoleIndex = 0;
 
     function changeGreetingandRole() {
