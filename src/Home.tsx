@@ -47,9 +47,16 @@ export default function Home() {
                     <FaPhoneSquare className="w-8 h-8 fill-[#f694fb]" />
                     +919445168005
                 </div>
-                <div className="flex gap-2 text-lg cursor-pointer" onClick={() => window.open("mailto:nanna7077@gmail.com", "_blank")}>
+                <div className="flex gap-2 text-lg items-center">
                     <FaMailBulk className="w-8 h-8 fill-[#f694fb]" />
-                    nanna7077@gmail.com
+                    <div className="flex flex-col">
+                        <div onClick={() => window.open("mailto:hello@nannan.in", "_blank")} className="cursor-pointer">
+                            hello@nannan.in
+                        </div>
+                        <div onClick={() => window.open("mailto:nanna7077@gmail.com", "_blank")} className="cursor-pointer">
+                            nanna7077@gmail.com
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
