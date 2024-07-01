@@ -6,7 +6,7 @@ import CustomCursor from "./components/Cursor";
 import Contact from "./Contact";
 import Works from "./Works";
 import Resume from "./Resume";
-import HireMeFooter from "./components/HireMeFooter";
+// import InfoFooter from "./components/InfoFooter";
 
 function App() {
     return (
@@ -21,7 +21,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/resume" element={<Resume />} />
                 </Routes>
-            <HireMeFooter/>
+            {/* <InfoFooter header="Ready to Hire?" content="Hire me"/> */}
             </div>
         </HashRouter>
     );
